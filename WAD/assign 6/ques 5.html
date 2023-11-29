@@ -1,0 +1,28 @@
+
+<html>
+
+<head>
+    <title>Question 5</title>
+</head>
+
+<body>
+    <script>
+        var number = prompt("Enter a number");
+
+       document.body.innerHTML = "Prime numbers between 1 and " +number +" are ";
+        for (let i = 2; i <= number; i++) {
+            let flag = 0;
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0) {
+               document.body.innerHTML += +i ;
+            }
+        }
+    </script>
+</body>
+
+</html>
